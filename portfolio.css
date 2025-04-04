@@ -1,0 +1,232 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #004aad;
+    padding: 20px 0;
+}
+
+ .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    color: #333;
+
+}
+
+
+nav .navbar ul li {
+    margin: 0 20px;
+}
+
+nav .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav .navbar ul li a:hover {
+    color: #ffae00;
+    transform: translateY(-5px);
+}
+
+/* Portfolio Introduction */
+.portfolio-introduction {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-introduction h1 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.portfolio-introduction p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Portfolio Gallery */
+.portfolio-gallery {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.portfolio-gallery .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.portfolio-gallery .portfolio-item {
+    background-color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-gallery .portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-gallery .portfolio-item h3 {
+    font-size: 1.6rem;
+    margin: 20px 0;
+    color: #004aad;
+}
+
+.portfolio-gallery .portfolio-item p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.portfolio-gallery .portfolio-item a.btn {
+    text-decoration: none;
+    background-color: #004aad;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-gallery .portfolio-item a.btn:hover {
+    background-color: #ffae00;
+    transform: translateY(-5px);
+}
+
+.portfolio-gallery .portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-gallery .portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Portfolio CTA Section */
+.portfolio-cta {
+    background-color: #004aad;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.portfolio-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.portfolio-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.portfolio-cta a.btn {
+    text-decoration: none;
+    background-color: #ffae00;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-cta a.btn:hover {
+    background-color: #004aad;
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .portfolio-introduction h1 {
+        font-size: 2.4rem;
+    }
+
+    .portfolio-introduction p {
+        font-size: 1rem;
+    }
+
+    .portfolio-gallery .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-gallery .portfolio-item {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .portfolio-cta h2 {
+        font-size: 2rem;
+    }
+
+    .portfolio-cta p {
+        font-size: 1rem;
+    }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+}

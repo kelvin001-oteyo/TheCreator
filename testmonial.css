@@ -1,0 +1,225 @@
+/* General Reset for Consistent Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Testimonial Page Styles */
+.testimonial-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonial-section h1 {
+    font-size: 3rem;
+    color: #004aad;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Testimonial Slider */
+.testimonial-slider {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.testimonial-slider .testimonial-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-item p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.testimonial-item span {
+    font-size: 1.1rem;
+    color: #777;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Navigation Buttons */
+.testimonial-slider .prev,
+.testimonial-slider .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #004aad;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.testimonial-slider .prev {
+    left: 20px;
+}
+
+.testimonial-slider .next {
+    right: 20px;
+}
+
+.testimonial-slider .prev:hover,
+.testimonial-slider .next:hover {
+    background-color: #ffae00;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .testimonial-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .testimonial-item {
+        padding: 15px;
+    }
+
+    .testimonial-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .testimonial-item p {
+        font-size: 1rem;
+    }
+
+    .testimonial-slider .prev,
+    .testimonial-slider .next {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #004aad;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffae00;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 1.5rem;
+    }
+}
+/* Footer Styles */
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Social Media Links */
+footer .social-links {
+    margin-top: 15px;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #ffae00;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer {
+        font-size: 1.2rem;
+    }
+
+    footer .social-links {
+        margin-top: 20px;
+    }
+
+    footer .social-links a {
+        font-size: 2rem;
+    }
+}

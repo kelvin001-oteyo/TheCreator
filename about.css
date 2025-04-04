@@ -1,0 +1,255 @@
+/* About Me Section */
+
+/* Navbar Style */
+.navbar {
+    background-color: #003366; /* Dark Blue */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.navbar .logo img {
+    width: 150px; /* Adjust logo size */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffae00; /* Gold */
+}
+
+.navbar .btn-resume {
+    background-color: #ffae00; /* Gold */
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar .btn-resume:hover {
+    background-color: #003366; /* Dark Blue */
+    color: white;
+}
+
+.about-me {
+    padding: 80px 0;
+    background-color: #003366; /* Dark Blue */
+}
+
+.about-me .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Profile Image */
+.about-image img {
+    width: 280px;  
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* About Content */
+.about-content {
+    flex: 1;
+    max-width: 600px;
+    padding-left: 50px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #ffae00; /* Gold */
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #003366;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills h2 {
+    color: #ffae00; /* Gold */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-item {
+    background: #ffae00; /* Gold */
+    color: #003366; /* Dark Blue */
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: transform 0.3s;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+}
+
+/* Experience & Education */
+.experience, .education {
+    padding: 50px 0;
+    background-color: #f0f4ff;
+    text-align: center;
+}
+
+.experience h2, .education h2 {
+    font-size: 2rem;
+    color: #003366; /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.timeline-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #003366; /* Dark Blue */
+}
+
+.timeline-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.timeline-item span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f0f4ff;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    color: #003366; /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+.testimonial-item {
+    background: #003366; /* Dark Blue */
+    color: white;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    font-size: 1rem;
+    color: #fff;
+    font-style: italic;
+}
+
+/* Call to Action */
+.cta {
+    padding: 50px 0;
+    background-color: #ffae00; /* Gold */
+    text-align: center;
+    color: black;
+}
+
+.cta h2 {
+    font-size: 2rem;
+}
+
+.cta a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    background-color: #003366; /* Dark Blue */
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.cta a:hover {
+    background-color: white;
+    color: #003366; /* Dark Blue */
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #003366; /* Dark Blue */
+    color: white;
+    text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
