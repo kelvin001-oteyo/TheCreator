@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kelvin Oteyo</title>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>If you have any questions or would like to discuss a project, feel free to get in touch with me via email or WhatsApp.</p>
+
+            <div class="contact-methods">
+                <a href="https://wa.me/254714328866" target="_blank" class="whatsapp-btn">
+                    <img  alt="WhatsApp"> WhatsApp me
+                </a>
+            </div>
+
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kelvin Oteyo. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+       emailjs.init("XMPVTkXlWWI_JEjxw"); // Replace with your actual EmailJS Public Key
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    emailjs.sendForm("oteyokelvin", "Oteyokelvin", this) // Service ID & Template ID
+        .then(function(response) {
+            alert("Your message has been sent successfully!");
+            document.getElementById("contact-form").reset(); // Clear form after submission
+        }, function(error) {
+            alert("Failed to send message. Please try again.");
+            console.error("EmailJS Error:", error);
+        });
+});
+
+    </script>
+</body>
+</html>
