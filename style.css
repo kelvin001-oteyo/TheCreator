@@ -21,9 +21,9 @@ a {
 }
 
 .hero .hero-image {
-    max-width: 100%;
+    max-width: 80%; /* Reducing the size of the image */
     height: auto;
-    animation: fadeIn 2s ease-in-out;
+    animation: zoomIn 3s ease-in-out;
 }
 
 .animated-text {
@@ -54,6 +54,7 @@ a {
     width: 100%;
     padding: 15px;
     z-index: 100;
+    animation: slideDown 1s ease-in-out;
 }
 
 .navbar ul {
@@ -71,6 +72,7 @@ a {
     font-size: 18px;
     text-transform: uppercase;
     transition: color 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .navbar ul li a:hover {
@@ -84,11 +86,13 @@ a {
 .social-media-links {
     text-align: center;
     margin: 50px 0;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .social-icons a {
     margin: 0 15px;
     transition: transform 0.3s ease;
+    animation: bounceIn 2s ease-in-out;
 }
 
 .social-icons a:hover {
@@ -109,6 +113,7 @@ a {
     background-color: #003366; /* Dark Blue */
     color: white;
     text-align: center;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 .service-box {
@@ -122,6 +127,7 @@ a {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     text-align: center;
+    animation: zoomIn 2s ease-in-out;
 }
 
 .service-box:hover {
@@ -166,6 +172,7 @@ a {
     max-width: 300px;
     margin: 15px;
     transition: transform 0.3s ease;
+    animation: zoomIn 2s ease-in-out;
 }
 
 .portfolio-gallery img:hover {
@@ -193,7 +200,7 @@ a {
     color: white;
     padding: 60px 0;
     text-align: center;
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 .testimonial-btn {
@@ -241,6 +248,38 @@ a {
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
