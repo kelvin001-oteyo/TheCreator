@@ -429,5 +429,41 @@ h1, h2, h3, p {
     }
 
 
+/* Mobile Responsive Nav */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        background-color: #004aad;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+}
+
+/* Default: hide menu toggle on large screens */
+.menu-toggle {
+    display: none;
+}
 
 
