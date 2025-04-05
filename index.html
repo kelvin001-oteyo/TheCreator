@@ -39,6 +39,8 @@
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
         </nav>
 
         <section class="social-media-links">
@@ -142,6 +144,13 @@
                 <a href="contact.html" class="btn">Get in Touch</a>
             </div>
         </section>
+            <script>
+function toggleMenu() {
+    const nav = document.querySelector('.navbar ul');
+    nav.classList.toggle('active');
+}
+</script>
+
     </body>
     
     <script defer src="js/script.js"></script>
