@@ -221,6 +221,7 @@ a {
     padding: 60px 0;
     text-align: center;
     animation: fadeIn 2s ease-in-out;
+    color: orange;
 }
 
 /* Animations */
